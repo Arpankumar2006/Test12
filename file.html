@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arpan Kumar | Resume & Portfolio</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        darkBg: '#0f172a',
+                        cardBg: '#1e293b',
+                        accentBlue: '#38bdf8',
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-darkBg text-slate-100 font-sans antialiased selection:bg-accentBlue selection:text-darkBg">
+
+    <!-- Header / Navbar with Tabs & Copy Code Button -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-darkBg/90 backdrop-blur-md border-b border-slate-800 shadow-lg">
+        <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+            <a href="#hero" class="text-xl font-bold tracking-wider text-accentBlue">ARPAN KUMAR</a>
+            
+            <!-- Tab Navigation Links -->
+            <nav class="hidden md:flex space-x-6 text-sm font-medium text-slate-300">
+                <a href="#about" class="px-3 py-1.5 rounded-lg hover:bg-slate-800 hover:text-accentBlue transition">About</a>
+                <a href="#education" class="px-3 py-1.5 rounded-lg hover:bg-slate-800 hover:text-accentBlue transition">Education</a>
+                <a href="#skills" class="px-3 py-1.5 rounded-lg hover:bg-slate-800 hover:text-accentBlue transition">Skills</a>
+                <a href="#extracurriculars" class="px-3 py-1.5 rounded-lg hover:bg-slate-800 hover:text-accentBlue transition">Extracurriculars</a>
+                <a href="#contact" class="px-3 py-1.5 rounded-lg hover:bg-slate-800 hover:text-accentBlue transition">Contact</a>
+            </nav>
+
+            <div class="flex items-center space-x-3">
+                <!-- Copy Code Button -->
+                <button onclick="copySourceCode()" id="copyBtn" class="px-3 py-2 text-xs font-semibold uppercase tracking-wider text-slate-200 bg-slate-800 border border-slate-700 rounded-md hover:bg-slate-700 hover:text-accentBlue transition flex items-center space-x-1.5 shadow">
+                    <i class="fa-regular fa-copy"></i>
+                    <span id="copyText">Copy Code</span>
+                </button>
+                <a href="#contact" class="hidden sm:inline-block px-4 py-2 text-xs font-semibold uppercase tracking-wider text-darkBg bg-accentBlue rounded-md hover:bg-sky-400 transition shadow">Get in Touch</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="min-h-screen flex items-center justify-center pt-16 px-6">
+        <div class="max-w-4xl mx-auto text-center">
+            <span class="inline-block py-1 px-3 rounded-full bg-slate-800 text-accentBlue text-xs font-semibold uppercase tracking-widest mb-6 border border-slate-700">B.Tech Computer Science & Engineering</span>
+            <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight mb-6 text-white">
+                Hi, I'm <span class="text-accentBlue">Arpan Kumar</span>
+            </h1>
+            <p class="text-lg sm:text-xl text-slate-400 max-w-2xl mx-auto mb-10">
+                Engineering undergraduate with a strong academic foundation from The Shri Ram School, skilled in software development, problem-solving, and technology.
+            </p>
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="#about" class="px-6 py-3 font-medium text-darkBg bg-accentBlue rounded-lg hover:bg-sky-400 transition shadow-lg shadow-sky-500/20">View Resume Tabs</a>
+                <a href="#contact" class="px-6 py-3 font-medium text-slate-200 bg-cardBg border border-slate-700 rounded-lg hover:bg-slate-700 transition">Contact Me</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-slate-900/50 border-y border-slate-800 scroll-mt-16">
+        <div class="max-w-5xl mx-auto px-6">
+            <h2 class="text-2xl sm:text-3xl font-bold mb-12 text-center text-white">About <span class="text-accentBlue">Me</span></h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                <div class="bg-cardBg p-8 rounded-2xl border border-slate-800 shadow-xl">
+                    <h3 class="text-xl font-semibold mb-4 text-accentBlue">Personal Profile</h3>
+                    <ul class="space-y-3 text-slate-300 text-sm">
+                        <li class="flex justify-between border-b border-slate-800 pb-2"><span class="text-slate-400">Full Name:</span> <strong class="text-white">Arpan Kumar</strong></li>
+                        <li class="flex justify-between border-b border-slate-800 pb-2"><span class="text-slate-400">Age / Gender:</span> <strong class="text-white">19 Years / Male</strong></li>
+                        <li class="flex justify-between border-b border-slate-800 pb-2"><span class="text-slate-400">Schooling:</span> <strong class="text-white">The Shri Ram School</strong></li>
+                        <li class="flex justify-between"><span class="text-slate-400">Degree:</span> <strong class="text-white">B.Tech CSE (2026-2030)</strong></li>
+                    </ul>
+                </div>
+                <div>
+                    <p class="text-slate-300 leading-relaxed mb-6">
+                        As a 19-year-old computer science engineering student, I combine technical discipline with rigorous training in sports and martial arts. My educational foundation from The Shri Ram School and university training drives me to build structured, efficient, and impactful software solutions.
+                    </p>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="bg-cardBg p-4 rounded-xl border border-slate-800 text-center">
+                            <span class="block text-2xl font-bold text-accentBlue">2026-30</span>
+                            <span class="text-xs text-slate-400">B.Tech Timeline</span>
+                        </div>
+                        <div class="bg-cardBg p-4 rounded-xl border border-slate-800 text-center">
+                            <span class="block text-2xl font-bold text-accentBlue">Red Belt</span>
+                            <span class="text-xs text-slate-400">Taekwondo Achievement</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="py-20 px-6 scroll-mt-16">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-2xl sm:text-3xl font-bold mb-12 text-center text-white">Educational <span class="text-accentBlue">Background</span></h2>
+            <div class="space-y-8">
+                <!-- University -->
+                <div class="bg-cardBg p-6 rounded-2xl border border-slate-800 shadow-xl relative pl-8 border-l-4 border-l-accentBlue">
+                    <span class="text-xs font-semibold text-accentBlue uppercase tracking-wider">2026 – 2030</span>
+                    <h3 class="text-xl font-bold text-white mt-1">Bachelor of Technology in Computer Science & Engineering (B.Tech CSE)</h3>
+                    <p class="text-slate-400 text-sm mt-2">Specializing in core computer science, algorithms, data structures, software engineering, and modern web applications.</p>
+                </div>
+                <!-- School -->
+                <div class="bg-cardBg p-6 rounded-2xl border border-slate-800 shadow-xl relative pl-8 border-l-4 border-l-slate-700">
+                    <span class="text-xs font-semibold text-slate-400 uppercase tracking-wider">High School Education</span>
+                    <h3 class="text-xl font-bold text-white mt-1">The Shri Ram School</h3>
+                    <p class="text-slate-400 text-sm mt-2">Completed formative schooling emphasizing academic excellence, analytical reasoning, and active sports participation.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 bg-slate-900/50 border-y border-slate-800 px-6 scroll-mt-16">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-2xl sm:text-3xl font-bold mb-12 text-center text-white">Core <span class="text-accentBlue">Skills</span></h2>
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
+                <div class="bg-cardBg p-6 rounded-2xl border border-slate-800 text-center">
+                    <i class="fa-solid fa-code text-accentBlue text-3xl mb-3"></i>
+                    <h3 class="font-bold text-white text-lg mb-2">Languages</h3>
+                    <p class="text-slate-400 text-sm">C, HTML, CSS, JavaScript</p>
+                </div>
+                <div class="bg-cardBg p-6 rounded-2xl border border-slate-800 text-center">
+                    <i class="fa-solid fa-laptop-code text-accentBlue text-3xl mb-3"></i>
+                    <h3 class="font-bold text-white text-lg mb-2">Development</h3>
+                    <p class="text-slate-400 text-sm">Web Development, Responsive Design, Git & GitHub</p>
+                </div>
+                <div class="bg-cardBg p-6 rounded-2xl border border-slate-800 text-center">
+                    <i class="fa-solid fa-brain text-accentBlue text-3xl mb-3"></i>
+                    <h3 class="font-bold text-white text-lg mb-2">Core Concepts</h3>
+                    <p class="text-slate-400 text-sm">Data Structures, Algorithms, Problem Solving</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Extracurriculars Section -->
+    <section id="extracurriculars" class="py-20 px-6 scroll-mt-16">
+        <div class="max-w-5xl mx-auto">
+            <h2 class="text-2xl sm:text-3xl font-bold mb-12 text-center text-white">Extracurricular <span class="text-accentBlue">Activities</span></h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Basketball -->
+                <div class="bg-cardBg p-6 rounded-2xl border border-slate-800 shadow-xl flex items-start space-x-4">
+                    <div class="p-3 bg-accentBlue/10 text-accentBlue rounded-xl text-xl">
+                        <i class="fa-solid fa-basketball"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-bold text-white">Basketball Team Member</h3>
+                        <p class="text-xs text-accentBlue font-medium mt-1">School Level (Until 10th Grade, School Team)</p>
+                        <p class="text-slate-400 text-sm mt-3">Actively played for the official school basketball team, building robust collaboration, coordination, discipline, and endurance under competitive game environments.</p>
+                    </div>
+                </div>
+                <!-- Taekwondo -->
+                <div class="bg-cardBg p-6 rounded-2xl border border-slate-800 shadow-xl flex items-start space-x-4">
+                    <div class="p-3 bg-accentBlue/10 text-accentBlue rounded-xl text-xl">
+                        <i class="fa-solid fa-medal"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-bold text-white">Taekwondo Practitioner</h3>
+                        <p class="text-xs text-accentBlue font-medium mt-1">Red Belt Certification</p>
+                        <p class="text-slate-400 text-sm mt-3">Achieved the rank of Red Belt, showcasing high commitment, physical conditioning, focused self-defense capability, and mental fortitude.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-slate-900/50 border-t border-slate-800 px-6 scroll-mt-16">
+        <div class="max-w-3xl mx-auto text-center">
+            <h2 class="text-2xl sm:text-3xl font-bold mb-4 text-white">Get In <span class="text-accentBlue">Touch</span></h2>
+            <p class="text-slate-400 mb-8">Have a question, collaboration idea, or want to connect? Feel free to reach out.</p>
+            <div class="inline-flex items-center space-x-6 bg-cardBg px-8 py-4 rounded-xl border border-slate-800">
+                <a href="mailto:arpan@example.com" class="text-slate-300 hover:text-accentBlue transition flex items-center space-x-2">
+                    <i class="fa-solid fa-envelope text-accentBlue"></i>
+                    <span>Email Me</span>
+                </a>
+                <span class="text-slate-700">|</span>
+                <a href="https://github.com" target="_blank" class="text-slate-300 hover:text-accentBlue transition flex items-center space-x-2">
+                    <i class="fa-brands fa-github text-accentBlue"></i>
+                    <span>GitHub</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 border-t border-slate-800 text-center text-xs text-slate-500">
+        <p>&copy; 2026 Arpan Kumar. Built for GitHub Hosting.</p>
+    </footer>
+
+    <!-- Script for Copy Code Button -->
+    <script>
+        function copySourceCode() {
+            const htmlContent = document.documentElement.outerHTML;
+            navigator.clipboard.writeText(htmlContent).then(() => {
+                const copyText = document.getElementById('copyText');
+                const copyBtn = document.getElementById('copyBtn');
+                copyText.innerText = 'Copied!';
+                copyBtn.classList.add('border-accentBlue', 'text-accentBlue');
+                setTimeout(() => {
+                    copyText.innerText = 'Copy Code';
+                    copyBtn.classList.remove('border-accentBlue', 'text-accentBlue');
+                }, 2000);
+            }).catch(err => {
+                console.error('Failed to copy text: ', err);
+            });
+        }
+    </script>
+</body>
+</html>
